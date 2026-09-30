@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infinite World Explorer</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Required so Three.js addons can resolve the "three" package in a browser. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="hud">
+    <div class="title">INFINITE WORLD EXPLORER</div>
+    <div id="coords">X: 0 · Z: 0</div>
+    <div class="help">WASD / Arrow Keys · Mouse to look · Shift to sprint · Esc to release</div>
+  </div>
+
+  <div id="crosshair">+</div>
+
+  <div id="start-screen">
+    <div class="panel">
+      <h1>INFINITE<br>WORLD EXPLORER</h1>
+      <p>A tiny procedural world that keeps generating as you walk.</p>
+      <button id="start">ENTER WORLD</button>
+      <small>Best experienced on desktop.</small>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
